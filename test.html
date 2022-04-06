@@ -34,7 +34,7 @@ some
 
   
 
-     navigator?.mediaDevices?.getUserMedia({ audio: false, video: true })
+     navigator?.mediaDevices?.getUserMedia({ audio: false, video: { width: 1500} })
       .then(stream => successHandler(stream))
       .catch(error => console.log(error));
 </script>
